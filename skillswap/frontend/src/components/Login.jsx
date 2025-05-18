@@ -3,7 +3,7 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
-import authService from '../services/authService';
+import { login } from '../services/authService';
 const Login = () => {
   const initialValues = {
     email: '',
