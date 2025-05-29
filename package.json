@@ -11,7 +11,8 @@
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend-separate": "cd backend && npm run dev",
     "dev:frontend-separate": "cd frontend && npm run dev",
-    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "vercel-build": "node vercel-build.js"
   },
   "keywords": [
     "skill-sharing",
