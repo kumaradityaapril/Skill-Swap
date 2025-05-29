@@ -4,7 +4,7 @@
   "description": "A Peer-to-Peer Learning Hub",
   "main": "index.js",
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
+    "build": "echo \"Skipping root build - use 'vercel-build' for Vercel deployment\" && exit 0",
     "start": "cd frontend && npm run preview",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
