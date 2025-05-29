@@ -4,7 +4,9 @@
   "description": "A Peer-to-Peer Learning Hub",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"Building frontend...\" && cd frontend && npm install && npm run build",
+    "build": "echo \"Skipping root build - use 'npm run build:frontend' or 'npm run build:backend'\" && exit 0",
+    "build:frontend": "cd frontend && npm install && npm run build",
+    "build:production": "npm run build:frontend",
     "start": "cd frontend && npm run preview",
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
@@ -12,7 +14,7 @@
     "dev:backend-separate": "cd backend && npm run dev",
     "dev:frontend-separate": "cd frontend && npm run dev",
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-    "vercel-build": "cd frontend && npm install && npm run build"
+    "vercel-build": "npm run build:frontend"
   },
   "keywords": [
     "skill-sharing",
