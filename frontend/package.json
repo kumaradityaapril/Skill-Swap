@@ -5,13 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --mode production",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "vite",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:prod": "vite build --mode production"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@headlessui/react": "^2.0.0",
@@ -32,9 +31,9 @@
     "@eslint/js": "^8.56.0",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
-    "@types/react": "^19.1.2",
-    "@types/react-dom": "^19.1.2",
-    "@vitejs/plugin-react": "^4.4.1",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "@vitejs/plugin-react": "^4.5.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^9.25.0",
     "eslint-plugin-react-hooks": "^5.2.0",
