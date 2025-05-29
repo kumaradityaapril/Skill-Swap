@@ -4,10 +4,10 @@
   "description": "A Peer-to-Peer Learning Hub",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "cd frontend && npm run dev",
     "build": "cd frontend && npm install && npm run build",
-    "preview": "vite preview",
-    "start": "vite preview"
+    "preview": "cd frontend && npm run preview",
+    "start": "cd frontend && npm run start"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",
