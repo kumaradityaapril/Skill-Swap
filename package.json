@@ -4,13 +4,15 @@
   "description": "A Peer-to-Peer Learning Hub",
   "main": "index.js",
   "scripts": {
-    "start": "cd backend && npm start",
+    "start": "cd frontend && npm run preview",
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend-separate": "cd backend && npm run dev",
     "dev:frontend-separate": "cd frontend && npm run dev",
     "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+    "vercel-build": "npm run build"
   },
   "keywords": [
     "skill-sharing",
