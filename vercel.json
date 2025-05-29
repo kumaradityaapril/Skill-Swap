@@ -6,7 +6,7 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "frontend/dist",
-        "installCommand": "cd frontend && npm install --legacy-peer-deps --include=dev",
+        "installCommand": "cd frontend && npm install --production=false",
         "buildCommand": "cd frontend && npm run build"
       }
     }
