@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "cd frontend && npm install && npm run build",
     "preview": "vite preview",
-    "start": "vite preview",
-    "vercel-build": "cd frontend && npm install && npm run build"
+    "start": "vite preview"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.1",

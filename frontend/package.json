@@ -12,7 +12,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:prod": "vite build --mode production",
-    "vercel-build": "node vercel-build.js"
+    "vercel-build": "node vercel-build.js && npm run build"
   },
   "dependencies": {
     "@headlessui/react": "^2.0.0",
