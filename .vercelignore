@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# Except these
+!frontend/**
+!vercel.json
+!package.json
+!package-lock.json
+
+# Ignore these specifically
+.git
+.gitignore
+README.md
+backend/
+node_modules/
